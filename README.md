@@ -3,7 +3,7 @@ Welcome to oof programming Language
 
 # Tutorial:
 
-Much line brainfuck, oof has a single pointer which can move in any direction for 5000 bytes
+Much like BrainFuck, oof has a single pointer which can move in any direction for 5000 bytes (You gotta change the value in the source code)
 
 
 In oof, you use commands to control the pointer, commands are created using a series of ```o```s followed by a single ```f```
