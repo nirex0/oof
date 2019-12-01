@@ -39,7 +39,9 @@ There are currently two examples in the example folder
 
 1) Hello, world!
 
-2) The source code of the compiler encoded into oof!
+2*) The source code of the compiler encoded into oof!
+
+*Yo don't get me wrong though, I didn't write an oof compiler with oof, I'm quite sure no sane person would ever want to even think about doing that, it's just the C++ source code of the compiler.h being printed out by oof when being run into the oof compiler* (Seriously, I have no idea what I'm doing or why I am doing it!)
 
 # Contact
 
