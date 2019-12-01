@@ -10,8 +10,10 @@ In oof, you use commands to control the pointer, commands are created using a se
 
 Let's call the number of ```o```s in your string **OLen**
 
-**OLen** % 6 determines what your command will do
-**OLen** / 6 determines how many times your command will execute
+##### There are two rules to **OLen**:
+
+1) **OLen** % 6 determines what your command will do
+2) **OLen** / 6 determines how many times your command will execute
 
 - if **OLen** % 6 is 0: oof compiler will take input from the console
 - if **OLen** % 6 is 1: oof compiler will move the pointer to the right
