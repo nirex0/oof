@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+*.db
+*.opendb
+src/.vs/oof/v15/.suo
+*.ipch
