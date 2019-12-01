@@ -5,7 +5,7 @@ Will probably add a loop later
 
 # Tutorial:
 
-Much like BrainFuck, oof has a single pointer which can move in any direction for 5000 bytes (You gotta change the value in the source code)
+Much like BrainFuck, oof has a single pointer which can move in any direction for 5000 bytes (You gotta change the value in the source code, if you want to change the 5000 byte limit)
 
 In oof, you use commands to control the pointer, commands are created using a series of ```o```s followed by a single ```f```
 
