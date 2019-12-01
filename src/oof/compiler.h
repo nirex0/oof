@@ -60,19 +60,39 @@ auto parse(std::string cmd) -> int
 		{
 			if (s == "") continue;
 				
-			size_t slm6 = s.length() % 6;
-			size_t sld6 = s.length() / 6;
+			size_t cmdSize = 8;
+			size_t slm6 = s.length() % cmdSize;
+			size_t sld6 = s.length() / cmdSize;
 			
+			slm6 += 1;
 			size_t i = 0;
 			do {
 				switch (slm6)
 				{
-				case 0: { std::cin >> *ptr; } break;		// 6 CIN
-				case 1: { ptr++; } break;					// 1 PTR ++
-				case 2: { ptr--; } break;					// 2 PTR --
-				case 3: { (*ptr)++; } break;					// 3 VALUE ++
-				case 4: { (*ptr)--; } break;					// 4 VALUE --
-				case 5: { std::cout << *ptr; } break;		// 5 COUT
+				// 1 PTR ++
+				case 1: { ptr++; } break;					
+				
+				// 2 PTR --
+				case 2: { ptr--; } break;					
+				
+				// 3 VALUE ++
+				case 3: { (*ptr)++; } break;				
+				
+				// 4 VALUE --
+				case 4: { (*ptr)--; } break;				
+				
+				// 5 COUT
+				case 5: { std::cout << *ptr; } break;		
+				
+				// 6 CIN
+				case 6: { std::cin >> *ptr; } break;		
+				
+				// 7 IF E ( MOVE FORWARD VALUE BYTES if E, MOVE BACKWARDS if NE)
+				case 7: { if (*(ptr - 1) == *(ptr + 1)) for (int x = 0; x < *ptr; x++) ptr++; else if (*(ptr - 1) == *(ptr + 1)) for (int x = 0; x < *ptr; x++) ptr--; } break;
+
+				// 7 IF NE ( MOVE FORWARD VALUE BYTES if NE, MOVE BACKWARDS if E)
+				case 8: { if (*(ptr - 1) != *(ptr + 1)) for (int x = 0; x < *ptr; x++) ptr++; else if (*(ptr - 1) != *(ptr + 1)) for (int x = 0; x < *ptr; x++) ptr--; } break;
+
 				default: break;
 				}
 			} while (i++ < sld6);
