@@ -5,13 +5,9 @@ Will probably add a loop later
 
 # Tutorial:
 
-Much like BrainFuck, oof has a single pointer which can move in any direction for 5000 bytes (You gotta change the value in the source code, if you want to change the 5000 byte limit)
-
-In oof, you use commands to control the pointer, commands are created using a series of ```o```s followed by a single ```f```
+Much Like the language BrainFuck, you are in control of a single pointer, and you use commands to control that pointer, commands are created using a series of ```o```s followed by a single ```f```
 
 Let's call the number of ```o```s in your string **OLen**
-
-A quick update note: oof now compiles directly into BrainFuck and then is interpreted by a BF interpreter to make things happen, and so because of this I decided to remove the "Super-useful" IF-E and IF-NE commmands.
 
 #### Rules of **OLen**:
 
