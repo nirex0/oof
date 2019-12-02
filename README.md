@@ -5,11 +5,9 @@ Will probably add a loop later
 
 # Tutorial:
 
-In oof, you use commands to control the pointer, commands are created using a series of ```o```s followed by a single ```f```
+Much Like the language BrainFuck, you are in control of a single pointer, and you use commands to control that pointer, commands are created using a series of ```o```s followed by a single ```f```
 
 Let's call the number of ```o```s in your string **OLen**
-
-A quick update note: oof now compiles directly into BrainFuck and then is interpreted by a BF interpreter to make things happen, and so because of this I decided to remove the "Super-useful" IF-E and IF-NE commands.
 
 #### Rules of **OLen**:
 
