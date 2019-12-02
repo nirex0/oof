@@ -82,9 +82,9 @@ auto parse(std::string cmd) -> void
 				case 1: { szbf += ">"; } break;
 				case 2: { szbf += "<"; } break;
 				case 3: { szbf += "+"; } break;
-				case 4: { szbf += "+";  } break;
-				case 5: {szbf += "+";  } break;
-				case 6: { szbf += "+";  } break;
+				case 4: { szbf += "+"; } break;
+				case 5: { szbf += "+";  } break;
+				case 6: { szbf += "+"; } break;
 				case 7: { szbf += "["; } break;
 				case 8: { szbf += "]"; } break;
 				default: break;
