@@ -11,6 +11,8 @@ In oof, you use commands to control the pointer, commands are created using a se
 
 Let's call the number of ```o```s in your string **OLen**
 
+A quick update note: oof now compiles directly into BrainFuck and then is interpreted by a BF interpreter to make things happen, and so because of this I decided to remove the "Super-useful" IF-E and IF-NE commmands.
+
 #### Rules of **OLen**:
 
 1) (**OLen** % 8) + 1 determines what your command will do
@@ -24,14 +26,8 @@ Let's call the number of ```o```s in your string **OLen**
 - if (**OLen** % 8) + 1 is 4: oof compiler will decrement the value of the pointer
 - if (**OLen** % 8) + 1 is 5: oof compiler will print the current value of the pointer to console
 - if (**OLen** % 8) + 1 is 6: oof compiler will take input from the console
-- if (**OLen** % 8) + 1 is 7: oof compiler will perform a IF-E operation
-- if (**OLen** % 8) + 1 is 8: oof compiler will perform a IF-NE operation
-
-#### IF Guide:
-
-Let's call the current value of the pointer ```V```
-
-When using an If statement, the compiler will compare the location right after the pointer to the location right before it, when comparing the two, if the condition of the if-statement in use returns true, the pointer will be moved to the right ```V``` bytes, and if the if-statement returns false, the pointer will be moved to the left ```V``` bytes.
+- if (**OLen** % 8) + 1 is 7: oof compiler will open a loop
+- if (**OLen** % 8) + 1 is 8: oof compiler will close a loop
 
 # Examples:
 
