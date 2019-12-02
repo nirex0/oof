@@ -11,7 +11,7 @@ In oof, you use commands to control the pointer, commands are created using a se
 
 Let's call the number of ```o```s in your string **OLen**
 
-A quick update note: oof now compiles directly into BrainFuck and then is interpreted by a BF interpreter to make things happen, and so because of this I decided to remove the "Super-useful" IF-E and IF-NE commmands.
+A quick update note: oof now compiles directly into BrainFuck and then is interpreted by a BF interpreter to make things happen, and so because of this I decided to remove the "Super-useful" IF-E and IF-NE commands.
 
 #### Rules of **OLen**:
 
