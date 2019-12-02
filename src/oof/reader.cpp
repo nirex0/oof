@@ -7,7 +7,6 @@
 
 auto main(int argc, char** argv) -> int
 {
-	int out = 1;
 	if (argc > 1)
 	{
 		if (utl_split(argv[1], ".")[utl_split(argv[1], ".").size() - 1] == "oof")
@@ -20,11 +19,8 @@ auto main(int argc, char** argv) -> int
 				result += str;
 				result += "\n";
 			}
-			out = parse(result);
+			parse(result);
 			f.close();
 		}
 	}
-
-
-	return out;
 }
