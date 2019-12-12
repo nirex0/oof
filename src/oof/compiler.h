@@ -40,7 +40,7 @@ auto bf(const std::string& cmd) -> void
 		{
 		case '<': { ptr--; break; }
 		case '>': { ptr++; if (ptr == data.end()) { data.push_back(0); ptr = data.end() - 1; } break; }
-		case '+': { (*ptr) += 1;	break; }
+		case '+': { (*ptr) += 1; break; }
 		case '-': { (*ptr) -= 1; break; }
 		case '.': { std::cout << char(*ptr); break; }
 		case ',': { char input; std::cin >> input; *ptr = input; }
@@ -66,30 +66,35 @@ auto parse(std::string cmd) -> void
 	{
 		std::vector<std::string> oofs = utl_split(cmd, "f");
 
+		int count = 0;
 		for (const auto& s : oofs)
 		{
-			if (s == "") continue;
-
+			count++;
+			if(count == oofs.size())
+			{
+				continue;
+			}
+			
 			size_t cmdSize = 8;
-			size_t slm6 = s.length() % cmdSize;
-			size_t sld6 = s.length() / cmdSize;
+			size_t slm8 = s.length() % cmdSize;
+			size_t sld8 = s.length() / cmdSize;
 
-			slm6 += 1;
+			slm8 += 1;
 			size_t i = 0;
 			do {
-				switch (slm6)
+				switch (slm8)
 				{
 				case 1: { szbf += ">"; } break;
 				case 2: { szbf += "<"; } break;
 				case 3: { szbf += "+"; } break;
-				case 4: { szbf += "+"; } break;
-				case 5: { szbf += "+";  } break;
-				case 6: { szbf += "+"; } break;
+				case 4: { szbf += "-"; } break;
+				case 5: { szbf += "."; } break;
+				case 6: { szbf += ","; } break;
 				case 7: { szbf += "["; } break;
 				case 8: { szbf += "]"; } break;
 				default: break;
 				}
-			} while (i++ < sld6);
+			} while (i++ < sld8);
 		}
 	}
 
