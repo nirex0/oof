@@ -1,8 +1,6 @@
 # oof
 Welcome to oof programming Language
 
-Will probably add a loop later
-
 # Tutorial:
 
 Much Like the language BrainFuck, you are in control of a single pointer, and you use commands to control that pointer, commands are created using a series of ```o```s followed by a single ```f```
