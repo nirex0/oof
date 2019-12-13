@@ -13,16 +13,16 @@ Let's call the number of ```o```s in your string **OLen**
 2) **OLen** / 8 determines how many times your command will execute
 
 #### Commands:
-
-- if (**OLen** % 8) + 1 is 1: oof compiler will move the pointer to the right
-- if (**OLen** % 8) + 1 is 2: oof compiler will move the pointer to the left
-- if (**OLen** % 8) + 1 is 3: oof compiler will increment the value of the pointer
-- if (**OLen** % 8) + 1 is 4: oof compiler will decrement the value of the pointer
-- if (**OLen** % 8) + 1 is 5: oof compiler will print the current value of the pointer to console
-- if (**OLen** % 8) + 1 is 6: oof compiler will take input from the console
-- if (**OLen** % 8) + 1 is 7: oof compiler will open a loop
-- if (**OLen** % 8) + 1 is 8: oof compiler will close a loop
-
+| Brainfuck | Shortest equivalent in Oof | Formula
+|------|------|------|
+| > | f | (**OLen** % 8 + 1) = 1 |
+| < | of | (**OLen** % 8 + 1) = 2 |
+| + | oof |(**OLen** % 8 + 1) = 3 |
+| - | ooof | (**OLen** %8 + 1) = 4 |
+| . | oooof | (**OLen** %8 + 1) = 5 |
+| , | ooooof |(**OLen** % 8 + 1) = 6 |
+| [ | oooooof | (**OLen** % 8 + 1) = 7 |
+| ] | ooooooof | (**OLen** % 8 + 1) = 8 |
 # Examples:
 
 There are currently two examples in the example folder
