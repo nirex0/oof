@@ -34,3 +34,8 @@
 *.opendb
 src/.vs/oof/v15/.suo
 *.ipch
+*.log
+*.pdb
+*.tlog
+*.idb
+*.ilk
