@@ -18,8 +18,8 @@ Let's call the number of ```o```s in your string **OLen**
 | > | f | (**OLen** % 8 + 1) = 1 |
 | < | of | (**OLen** % 8 + 1) = 2 |
 | + | oof |(**OLen** % 8 + 1) = 3 |
-| - | ooof | (**OLen** %8 + 1) = 4 |
-| . | oooof | (**OLen** %8 + 1) = 5 |
+| - | ooof | (**OLen** % 8 + 1) = 4 |
+| . | oooof | (**OLen** % 8 + 1) = 5 |
 | , | ooooof |(**OLen** % 8 + 1) = 6 |
 | [ | oooooof | (**OLen** % 8 + 1) = 7 |
 | ] | ooooooof | (**OLen** % 8 + 1) = 8 |
